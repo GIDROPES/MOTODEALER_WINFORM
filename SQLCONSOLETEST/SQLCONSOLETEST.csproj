@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6164721-631F-4FB3-9123-C2F51C49893B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SQLCONSOLETEST</RootNamespace>
+    <AssemblyName>SQLCONSOLETEST</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewMoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewMoto.Designer.cs">
+      <DependentUpon>AddNewMoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMode.Designer.cs">
+      <DependentUpon>AdminMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientMode.Designer.cs">
+      <DependentUpon>ClientMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL.cs" />
+    <Compile Include="NewMotoModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewMotoModel.Designer.cs">
+      <DependentUpon>NewMotoModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewConsultant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewConsultant.Designer.cs">
+      <DependentUpon>NewConsultant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateInfo.Designer.cs">
+      <DependentUpon>UpdateInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JournalSales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JournalSales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MotoDealerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotoDealerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MotoDealerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotoDealerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MotoDealerDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotoDealerDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MotoDealerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotoDealerDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MotoDealerDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotoDealerDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MotoDealerDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotoDealerDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MotoDealerDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotoDealerDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MotoDealerDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotoDealerDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MotoInfoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotoInfoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SellerJournalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SellerJournalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="JournalSales.xsc">
+      <DependentUpon>JournalSales.xsd</DependentUpon>
+    </None>
+    <None Include="JournalSales.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JournalSales.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JournalSales.xss">
+      <DependentUpon>JournalSales.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet.xsc">
+      <DependentUpon>MotoDealerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MotoDealerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MotoDealerDataSet.xss">
+      <DependentUpon>MotoDealerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet1.xsc">
+      <DependentUpon>MotoDealerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MotoDealerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MotoDealerDataSet1.xss">
+      <DependentUpon>MotoDealerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet2.xsc">
+      <DependentUpon>MotoDealerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MotoDealerDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MotoDealerDataSet2.xss">
+      <DependentUpon>MotoDealerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet3.xsc">
+      <DependentUpon>MotoDealerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MotoDealerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MotoDealerDataSet3.xss">
+      <DependentUpon>MotoDealerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet4.xsc">
+      <DependentUpon>MotoDealerDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MotoDealerDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MotoDealerDataSet4.xss">
+      <DependentUpon>MotoDealerDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet5.xsc">
+      <DependentUpon>MotoDealerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MotoDealerDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MotoDealerDataSet5.xss">
+      <DependentUpon>MotoDealerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet6.xsc">
+      <DependentUpon>MotoDealerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MotoDealerDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MotoDealerDataSet6.xss">
+      <DependentUpon>MotoDealerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet7.xsc">
+      <DependentUpon>MotoDealerDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="MotoDealerDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MotoDealerDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MotoDealerDataSet7.xss">
+      <DependentUpon>MotoDealerDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="MotoInfoDataSet.xsc">
+      <DependentUpon>MotoInfoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MotoInfoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MotoInfoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MotoInfoDataSet.xss">
+      <DependentUpon>MotoInfoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SellerJournalDataSet.xsc">
+      <DependentUpon>SellerJournalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SellerJournalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SellerJournalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SellerJournalDataSet.xss">
+      <DependentUpon>SellerJournalDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddNewMoto.resx">
+      <DependentUpon>AddNewMoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMode.resx">
+      <DependentUpon>AdminMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientMode.resx">
+      <DependentUpon>ClientMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewConsultant.resx">
+      <DependentUpon>NewConsultant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMotoModel.resx">
+      <DependentUpon>NewMotoModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateInfo.resx">
+      <DependentUpon>UpdateInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
